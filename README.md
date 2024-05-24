@@ -1,4 +1,4 @@
-# DollarDiary
+# DollarDiary - Expense Tracking System
 
 ## Project Description
 
