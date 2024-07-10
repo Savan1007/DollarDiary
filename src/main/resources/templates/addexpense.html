@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Entry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #3498db;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+            font-size: 18px;
+        }
+
+        input[type="date"],
+        select,
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="date"]:focus,
+        select:focus,
+        input[type="text"]:focus {
+            border-color: #3498db;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        .select-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .select-icon {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+    </style>
+    <style>
+        /* Add custom CSS for logo size and alignment */
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Modify the logo size and position it in the top left corner */
+        #company-logo {
+            width: 100px;/* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Adjust margin as needed */
+        }
+
+        /* Ensure the header takes the full width */
+        header h1 {
+            flex-grow: 1;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <img id="company-logo" src="images/logo.png" alt="Company Logo">
+        <h1>Add Expense</h1>
+    </header>
+    <form id="expenseForm" action="/expense/save" method="post">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item" required>
+
+        <label for="subCategory">Category:</label>
+        <div class="select-wrapper">
+            <select id="subCategory" name="subCategory" required>
+                <option value="" disabled selected>-- Select Category --</option>
+                <option value="ENTERTAINMENT">🎬 Entertainment</option>
+                <option value="GROCERIES">🛒 Groceries</option>
+                <option value="INVESTMENTS">💼 Investments</option>
+                <option value="LOSE_OF_MONEY">💸 Loss of Money</option>
+                <option value="MEDICAL">️💊 Medical</option>
+                <option value="OUTSIDE_FOOD">🍔 Outside Food</option>
+                <option value="RENT_AND_OTHER_BILLS">🏠 Rent and Other Bills</option>
+                <option value="SALON_AND_COSMETICS">💇‍♀️ Salon and Beauty Products</option>
+                <option value="SHOPPING">🛍️ Shopping</option>
+                <option value="TRANSPORT">🚗 Transport</option>
+                <option value="VEGETABLES_FRUITS_DAIRY_AND_MEAT">🥕🍏🥛🥩 Vegetables, Fruits, Dairy and Meat</option>
+                <option value="OTHERS">🌟 Others</option>
+            </select>
+            <div class="select-icon">&#9660;</div>
+        </div>
+
+        <label for="spent">Spent (Total spent amount):</label>
+        <input type="text" id="spent" name="spent" required>
+
+        <label for="user">User (Specify the person's name):</label>
+        <input type="text" id="user" name="user" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<script>
+    document.getElementById("expenseForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Collect form data
+        const formData = new FormData(document.getElementById("expenseForm"));
+
+        // Create a JSON object from form data
+        const newExpense = {
+            date: formData.get("date"),
+            item: formData.get("item"),
+            category: formData.get("subCategory"),
+            spent: parseFloat(formData.get("spent")),
+            spentBy: formData.get("user")
+        };
+
+        // Send a POST request to the /expense/save endpoint on port 8080
+        fetch("http://localhost:8080/expense/save", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newExpense)
+        })
+        .then(response => {
+            if (response.status === 200) {
+                alert("Expense saved successfully!");
+                // Clear the form input fields after successful submission
+                document.getElementById("expenseForm").reset();
+            } else {
+                alert("Failed to save expense. Please try again.");
+            }
+        })
+        .catch(error => {
+            alert("An error occurred. Please try again.");
+        });
+    });
+</script>
+</body>
+</html>
