@@ -150,7 +150,6 @@ The final solution is superior to the previous ones because it incorporates comp
 | Expense Tracking                | Basic CRUD functionality                  | CRUD + Categorization and Budget Setting   | CRUD + Categorization, Budget Setting, Report Generation |
 | User Engagement                 | Low                                       | Moderate                                   | High                                                    |
 | Scalability                     | High                                      | Moderate                                   | High                                                    |
-| User Interface                  | Simple                                    | Moderate Complexity                        | Command Line Interface                                  |
 | Market Competitiveness          | Low                                       | Moderate                                   | High                                                    |
 
 The final solution is superior to the previous ones because it incorporates comprehensive features that enhance user engagement and functionality without compromising on scalability or user experience. The inclusion of a report generation feature ensures users can analyze their spending habits in detail, and a command line interface simplifies usage for tech-savvy users.
