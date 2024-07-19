@@ -16,7 +16,7 @@ Overall, DollarDiary aims to provide a seamless and efficient way for users to m
 - Logging expenses with date, amount, category, and description
 - Categorizing expenses into categories
 - Setting and managing budgets for different categories
-- Report Generation of the current and past expenses
+- Report generation of the current and past expenses
 
 ## Technology Stack
  
