@@ -13,10 +13,10 @@
 - **NV2** = {Month: 13 ≤ month < ∞}
 - **NV3** = {Year: -∞ < year ≤ 2022}
 - **V2** = {Year: 2023 ≤ year ≤ 2025}
-- **NV4** = {Year: 2025 ≤ year < ∞}
+- **NV4** = {Year: 2026 ≤ year < ∞}
 - **NV5** = {Category: -∞ < category ≤ 0}
 - **V3** = {Category: 1 ≤ category ≤ 6}
-- **NV6** = {Category: 6 ≤ category < ∞}
+- **NV6** = {Category: 7 ≤ category < ∞}
 
 ## Test cases
 
