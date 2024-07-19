@@ -1,7 +1,7 @@
 # Use Case Diagram
 
 ## Main Success Scenario
-
+### Here S = System and A = Actor 
 | Steps | Description                                         |
 |-------|-----------------------------------------------------|
 | 1.    | **A:** Open DollarDiary                             |
