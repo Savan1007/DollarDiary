@@ -147,7 +147,7 @@ The second solution builds on the first by incorporating expense categorization 
 
 ### 3.3 Final Solution
 
-This is the final solution. Explain why it is better than other solutions. You may use a table for comparison purposes. After providing the reason for selecting this solution, detail it below.
+The final solution is superior to the previous ones because it incorporates comprehensive features that enhance user engagement and functionality without compromising scalability or user experience. Including Report generation, limits ensure users maintain disciplined spending habits, and a user-friendly Command-Line interface offers a clear overview of their finances.
 
 #### 3.3.1 Components
 
