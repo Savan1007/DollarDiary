@@ -1,6 +1,6 @@
 # ENSE 375 – Software Testing and Validation
 
-![UofR](UofR_logo.png)
+![UofR](Assests/UofRlogo1.png)
 
 # DollarDiary
 
