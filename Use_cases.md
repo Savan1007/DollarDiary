@@ -1,4 +1,4 @@
-# Use Case Diagram
+# Use Case Based Testing
 
 ## Main Success Scenario
 ### Here S = System and A = Actor 
