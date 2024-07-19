@@ -1,4 +1,4 @@
-# Use Case - Project
+# Use Case Diagram
 
 ## Main Success Scenario
 
