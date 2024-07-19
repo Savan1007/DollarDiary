@@ -58,7 +58,7 @@ Overall, DollarDiary aims to provide a seamless and efficient way for users to m
 
 **Features:**
 
-- Command-Line User registration and login
+- User registration and login
 - Logging expenses with date, amount, category, and description
 - Categorizing expenses into categories
 - Setting and managing budgets for different categories
@@ -137,12 +137,13 @@ The second solution builds on the first by incorporating expense categorization.
 **Reason for not selecting this solution:**
 
 - Scalability Issues: Adding categorization without considering scalability might lead to performance issues as the number of users grows.
-- User Experience Complexity: While adding these features improves functionality, it may also complicate the user command line interface, making it less intuitive for users who prefer simplicity.
+- User Experience Complexity: While adding these features improves functionality, it may also complicate the user, making it less intuitive for users who prefer simplicity.
 - Integration Challenges: Implementing these additional features might introduce complexities in integrating and maintaining the application, leading to potential technical debt and increased maintenance efforts.
 
 ### 3.3 Final Solution
 
-The final solution is superior to the previous ones because it incorporates comprehensive features that enhance user engagement and functionality without compromising scalability or user experience. Including Report generation ensures users maintain disciplined spending habits, by using authentication one can make their spending private and a user-friendly Command-Line interface offers a clear overview of their finances.
+The final solution is superior to the previous ones because it incorporates comprehensive features that enhance user engagement and functionality without compromising scalability or user experience. Including Report generation ensures users maintain disciplined spending habits, by using authentication one can make their spending private and the interface offers a clear overview of their finances.
+
 ### Table 1: Comparison of Solutions
 
 | Feature                         | Solution 1                                | Solution 2                                 | Final Solution                                          |
@@ -152,26 +153,26 @@ The final solution is superior to the previous ones because it incorporates comp
 | Scalability                     | High                                      | Moderate                                   | High                                                    |
 | Market Competitiveness          | Low                                       | Moderate                                   | High                                                    |
 
-The final solution is superior to the previous ones because it incorporates comprehensive features that enhance user engagement and functionality without compromising on scalability or user experience. The inclusion of a report generation feature ensures users can analyze their spending habits in detail, and a command line interface simplifies usage for tech-savvy users.
+The final solution is superior to the previous ones because it incorporates comprehensive features that enhance user engagement and functionality without compromising on scalability or user experience. The inclusion of a report generation feature ensures users can analyze their spending habits in detail, and the interface simplifies usage for tech-savvy users.
 
 ### 3.3.1 Components
 
 **Components Used:**
 
-- **Login Command:** Secure user authentication using Spring Security with JWT.
+- **Login Command:** Secure user authentication.
 - **Add Expense Command:** Allows users to log their expenses with date, amount, category, and description.
-- **Dashboard Command:** Provides an overview of expenses and budgets in a command line format.
+- **Dashboard Command:** Provides an overview of expenses and budgets.
 - **Report Generation Command:** Enables users to generate and view detailed reports of their expenses and budgets.
-- **Backend Services:** Java (Spring Boot) handling business logic.
+- **Backend Services:** Java.
 - **Database:** MongoDB for storing user data and expense records.
-- **Build Tool:** Maven or Gradle for project management and dependency handling.
+- **Build Tool:** Maven for project management and dependency handling.
 
 **Purpose of Each Component:**
 
 - **Login Command:** Ensures secure access to the application by authenticating users.
-- **Add Expense Command:** Facilitates logging of expenses with all necessary details via command line.
-- **Dashboard Command:** Provides a clear and concise overview of financial data in the command line interface.
-- **Report Generation Command:** Allows users to generate detailed financial reports for better analysis and planning via command line.
+- **Add Expense Command:** Facilitates logging of expenses with all necessary details.
+- **Dashboard Command:** Provides a clear and concise overview of financial data.
+- **Report Generation Command:** Allows users to generate detailed financial reports for better analysis and planning.
 - **Backend Services:** Manages application logic and interactions between components.
 - **Database:** Efficiently stores and retrieves user and expense data.
 - **Build Tool:** Manages project dependencies and builds the application.
@@ -185,11 +186,11 @@ The final solution is superior to the previous ones because it incorporates comp
 
 | Feature                          | Description                                                                   |
 |----------------------------------|-------------------------------------------------------------------------------|
-| User Registration and Login      | Secure user authentication using Spring Security with JWT.                    |
+| User Registration and Login      | Secure user authentication.                    |
 | Logging Expenses                 | Users can log their expenses with date, amount, category, and description.    |
 | Categorizing Expenses            | Expenses can be categorized for better tracking and analysis.                 |
 | Setting and Managing Budgets     | Users can set budgets for different categories.                               |
-| Command Line Dashboard           | Overview of expenses and budgets for easy tracking and management.            |
+| Dashboard                        | Overview of expenses and budgets for easy tracking and management.            |
 | Report Generation                | Users can generate detailed reports of their expenses and budgets.            |
 
 ### 3.3.3 Environmental, Societal, Safety, and Economic Considerations
@@ -197,7 +198,7 @@ The final solution is superior to the previous ones because it incorporates comp
 - **Environmental:** The digital nature of the application reduces paper use, contributing to environmental sustainability.
 - **Societal:** Promotes financial literacy and responsible spending habits among users, contributing to societal financial health.
 - **Economic:** Free or low-cost access to personal finance management tools helps users save money and plan better financially.
-- **Safety:** Secure authentication and data encryption ensure user data privacy and protection.
+- **Safety:** Secure authentication.
 
 ### 3.3.4 Test Cases and Results
 
@@ -240,9 +241,8 @@ The final solution is superior to the previous ones because it incorporates comp
     - *Summary:* These tests validate that the application performs correctly for various user scenarios and interactions.
 
 **Execution of Test Cases:**
-
 - Automated tests using JUnit.
-- Manual testing for command line interface and user experience validation.
+
 
 ### 3.3.5 Limitations
 
@@ -251,6 +251,7 @@ The final solution is superior to the previous ones because it incorporates comp
 - **Integration Issues:** Future integration with third-party services might introduce challenges.
 
 Overall, the final solution for DollarDiary provides a robust and comprehensive expense tracking system that is user-friendly, secure, and scalable, addressing the limitations of previous solutions.
+
 ## 4. Team Work
 
 ### 4.1 Meeting 1
