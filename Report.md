@@ -48,44 +48,44 @@
 
 ## 1. Introduction
 
-The DollarDiary is a comprehensive web application developed in Java using the Spring Boot framework. This application is designed to assist users in managing their personal finances by providing a detailed and organized way to track expenses. Users can log their expenses with relevant details such as the date, amount, category, and description, ensuring a thorough record of their spending habits.
+The DollarDiary is a comprehensive application developed in Java. This application is designed to assist users in managing their personal finances by providing a detailed and organized way to track expenses. Users can log their expenses with relevant details such as the date, amount, category, and description, ensuring a thorough record of their spending habits.
 
-In addition to tracking expenses, the application allows users to categorize their spending into categories. This categorization helps users to better understand their spending patterns and identify areas where they can save money. Users can also set budgets for different categories and receive notifications when they are approaching their budget limits, promoting more disciplined spending.
+In addition to tracking expenses, the application allows users to categorize their spending into categories. This categorization helps users to better understand their spending patterns and identify areas where they can save money. Users can also set budgets and receive reports.
 
-The application features a user-friendly dashboard that provides an overview of expenses and budgets.
+The application features a dashboard that provides an overview of expenses and budgets.
 
 Overall, DollarDiary aims to provide a seamless and efficient way for users to manage their finances, promoting better financial health and stability.
 
 **Features:**
 
-- User registration and login
+- Command-Line User registration and login
 - Logging expenses with date, amount, category, and description
 - Categorizing expenses into categories
 - Setting and managing budgets for different categories
+- Report generation of the current and past expenses
 
 **Technology Stack:**
 
-- Frontend: HTML, CSS, JavaScript
-- Backend: Java (Spring Boot)
-- Database: MongoDB
-- Authentication: Spring Security with JWT
-- Build Tool: Maven or Gradle
+- **Backend:** Java
+- **Database:** MongoDB
+- **Authentication:** Basic Security
+- **Build Tool:** Maven 
 
 ## 2.Design Problem
 
 ### 2.1 Problem Definition
 
-In today's fast-paced world, many individuals struggle to keep track of their personal finances, leading to overspending, poor financial planning, and stress. Traditional methods of expense tracking, such as pen-and-paper logs or basic spreadsheets, are often cumbersome, prone to errors, and lack the ability to provide meaningful insights into spending patterns. Without a systematic way to categorize expenses and monitor budgets, users find it challenging to identify areas where they can cut costs and save money. Additionally, the absence of timely notifications regarding budget limits further exacerbates financial mismanagement. There is a need for a comprehensive, user-friendly solution that not only simplifies the tracking of expenses but also helps users make informed financial decisions to achieve better financial stability and health.
+In today's fast-paced world, many individuals struggle to keep track of their personal finances, leading to overspending, poor financial planning, and stress. Traditional methods of expense tracking, such as pen-and-paper logs or basic spreadsheets, are often cumbersome, prone to errors, and lack the ability to provide meaningful insights into spending patterns. Without a systematic way to categorize expenses and monitor budgets, users find it challenging to identify areas where they can cut costs and save money. Additionally, the absence of report generation regarding budget further exacerbates financial mismanagement. There is a need for a comprehensive, user-friendly solution that not only simplifies the tracking of expenses but also helps users make informed financial decisions to achieve better financial stability and health.
 
 ### 2.2 Design Requirements
 
 #### 2.2.1 Functions
 
 - **Register users:** Allow users to create an account by providing necessary details such as username, password, and email address.
-- **Authenticate users:** Verify user credentials during login using Spring Security with JWT to ensure secure access.
-- **Log expenses:** Enable users to input expenses with details such as date, amount, category, and description.
-- **Categorize expenses:** Allow users to assign expenses to predefined or custom categories for better organization.
-- **Set budgets:** Permit users to set budget limits for different categories and track their spending against these budgets.
+- **Authenticate users:** Verify user credentials during login to ensure secure access.
+- **Log expenses:** Enable users to Add, Delete, and Update expenses with details such as date, amount, category, and description.
+- **Categorize expenses:** Allow users to assign expenses to predefined categories for better organization.
+- **Set budgets:** Permit users to set budget limits and track their spending against these budgets.
 
 #### 2.2.2 Objectives
 
@@ -93,17 +93,11 @@ In today's fast-paced world, many individuals struggle to keep track of their pe
   - Develop a system that allows users to log and track their daily expenses effectively.
   - Enable users to categorize their expenses to better understand their spending patterns.
 - **Facilitate Budgeting and Financial Planning:**
-  - Allow users to set budgets for different expense categories.
-  - Notify users when they are approaching their budget limits to promote better financial discipline.
+  - Allow users to set budgets.
 - **Enhance User Experience with Data Visualization:**
-  - Provide interactive charts and graphs to help users visualize their financial data clearly.
   - Generate detailed monthly and yearly reports to help users analyze their spending over time.
 - **Ensure Security and Compliance:**
-  - Implement secure user authentication and authorization.
-  - Protect sensitive user data through encryption and comply with relevant data protection regulations.
-- **Promote Accessibility and Usability:**
-  - Design an intuitive and user-friendly interface.
-  - Ensure the application is accessible to users with disabilities.
+  - Implement secure user authentication.
 
 #### 2.2.3 Constraints
 
@@ -372,7 +366,7 @@ Overall, the final solution for DollarDiary provides a robust and comprehensive 
 
 ### 4.11 Meeting 11
 
-**Time:** July 17, 2024, 3: 00 pm to 4: 30 pm
+**Time:** July 19, 2024, 3: 00 pm to 4: 30 pm
 **Agenda:** Final Review and Presentation Preparation
 
 | Team Member        | Previous Task        | Completion State | Next Task                          |
