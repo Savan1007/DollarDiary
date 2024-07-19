@@ -10,33 +10,31 @@
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Design Problem](#design-problem)
-   2.1 [Problem Definition](#problem-definition)
-   2.2 [Design Requirements](#design-requirements)
-      2.2.1 [Functions](#functions)
-      2.2.2 [Objectives](#objectives)
-      2.2.3 [Constraints](#constraints)
-3. [Solution](#solution)
-   3.1 [Solution 1](#solution-1)
-   3.2 [Solution 2](#solution-2)
-   3.3 [Final Solution](#final-solution)
-      3.3.1 [Components](#components)
-      3.3.2 [Features](#features)
-      3.3.3 [Environmental Societal Safety and Economic Considerations](#environmental-societal-safety-and-economic-considerations)
-      3.3.4 [Test Cases and Results](#test-cases-and-results)
-      3.3.5 [Limitations](#limitations)
-4. [Team Work](#team-work)
-   4.1 [Meeting 1](#meeting-1)
-   4.2 [Meeting 2](#meeting-2)
-   4.3 [Meeting 3](#meeting-3)
-   4.4 [Meeting 4](#meeting-4)
-   4.5 [Meeting 5](#meeting-5)
-   4.6 [Meeting 6](#meeting-6)
-5. [Project Management](#project-management)
-6. [Conclusion and Future Work](#conclusion-and-future-work)
-7. [References](#references)
-8. [Appendix](#appendix)
+- **1. Introduction**
+- **2. Design Problem**
+   - 2.1 Problem Definition
+   - 2.2 Design Requirements
+      - 2.2.1 Functions
+      - 2.2.2 Objectives
+      - 2.2.3 Constraints
+- **3. Solution**
+   - 3.1 Solution
+   - 3.2 Solution
+   - 3.3 Final Solution
+      - 3.3.1 Components
+      - 3.3.2 Features
+      - 3.3.3 Environmental, Societal, Safety, and Economic Considerations
+      - 3.3. 5 Test cases and results
+      - 3.3.4 Limitations
+- **4. Team Work**
+   - 4.1 Meeting
+   - 4.2 Meeting
+   - 4.3 Meeting
+   - 4.4 Meeting
+- **5. Project Management**
+- **6. Conclusion and Future Work**
+- **7. References**
+- **8. Appendix**
 
 ## 1. Introduction
 
