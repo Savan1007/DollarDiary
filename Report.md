@@ -12,38 +12,39 @@
 
 ## Table of Contents
 
-- **1. Introduction**
-- **2. Design Problem**
-   - 2.1 Problem Definition
-   - 2.2 Design Requirements
-      - 2.2.1 Functions
-      - 2.2.2 Objectives
-      - 2.2.3 Constraints
-- **3. Solution**
-   - 3.1 Solution
-   - 3.2 Solution
-   - 3.3 Final Solution
-      - 3.3.1 Components
-      - 3.3.2 Features
-      - 3.3.3 Environmental, Societal, Safety, and Economic Considerations
-      - 3.3. 5 Test cases and results
-      - 3.3.4 Limitations
-- **4. Team Work**
-   - 4.1 Meeting
-   - 4.2 Meeting
-   - 4.3 Meeting
-   - 4.4 Meeting
-   - 4.5 Meeting
-   - 4.6 Meeting
-   - 4.7 Meeting
-   - 4.8 Meeting
-   - 4.9 Meeting
-   - 4.10 Meeting
-   - 4.11 Meeting
-- **5. Project Management**
-- **6. Conclusion and Future Work**
-- **7. References**
-- **8. Appendix**
+- [1. Introduction](#introduction)
+- [2. Design Problem](#design-problem)
+   - [2.1 Problem Definition](#21-problem-definition)
+   - [2.2 Design Requirements](#22-design-requirements)
+      - [2.2.1 Functions](#221-functions)
+      - [2.2.2 Objectives](#222-objectives)
+      - [2.2.3 Constraints](#223-constraints)
+- [3. Solution](#solution)
+   - [3.1 Solution](#31-solution)
+   - [3.2 Solution](#32-solution)
+   - [3.3 Final Solution](#33-final-solution)
+      - [3.3.1 Components](#331-components)
+      - [3.3.2 Features](#332-features)
+      - [3.3.3 Environmental, Societal, Safety, and Economic Considerations](#333-environmental-societal-safety-and-economic-considerations)
+      - [3.3.4 Limitations](#334-limitations)
+      - [3.3.5 Test cases and results](#335-test-cases-and-results)
+- [4. Team Work](#team-work)
+   - [4.1 Meeting](#41-meeting)
+   - [4.2 Meeting](#42-meeting)
+   - [4.3 Meeting](#43-meeting)
+   - [4.4 Meeting](#44-meeting)
+   - [4.5 Meeting](#45-meeting)
+   - [4.6 Meeting](#46-meeting)
+   - [4.7 Meeting](#47-meeting)
+   - [4.8 Meeting](#48-meeting)
+   - [4.9 Meeting](#49-meeting)
+   - [4.10 Meeting](#410-meeting)
+   - [4.11 Meeting](#411-meeting)
+- [5. Project Management](#project-management)
+- [6. Conclusion and Future Work](#conclusion-and-future-work)
+- [7. References](#references)
+- [8. Appendix](#appendix)
+
 
 ## 1. Introduction
 
@@ -148,28 +149,115 @@ The second solution builds on the first by incorporating expense categorization.
 ### 3.3 Final Solution
 
 The final solution is superior to the previous ones because it incorporates comprehensive features that enhance user engagement and functionality without compromising scalability or user experience. Including Report generation ensures users maintain disciplined spending habits, by using authentication one can make their spending private and a user-friendly Command-Line interface offers a clear overview of their finances.
+### Table 1: Comparison of Solutions
 
-#### 3.3.1 Components
+| Feature                         | Solution 1                                | Solution 2                                 | Final Solution                                          |
+|---------------------------------|-------------------------------------------|--------------------------------------------|---------------------------------------------------------|
+| Expense Tracking                | Basic CRUD functionality                  | CRUD + Categorization and Budget Setting   | CRUD + Categorization, Budget Setting, Report Generation |
+| User Engagement                 | Low                                       | Moderate                                   | High                                                    |
+| Scalability                     | High                                      | Moderate                                   | High                                                    |
+| User Interface                  | Simple                                    | Moderate Complexity                        | Command Line Interface                                  |
+| Market Competitiveness          | Low                                       | Moderate                                   | High                                                    |
 
-What components you used in the solution? What is the main purpose of using individual components? Provide a block diagram (with a numbered caption such as Fig. 1) representing the connectivity and interaction between all the components.
+The final solution is superior to the previous ones because it incorporates comprehensive features that enhance user engagement and functionality without compromising on scalability or user experience. The inclusion of a report generation feature ensures users can analyze their spending habits in detail, and a command line interface simplifies usage for tech-savvy users.
+
+### 3.3.1 Components
+
+**Components Used:**
+
+- **Login Command:** Secure user authentication using Spring Security with JWT.
+- **Add Expense Command:** Allows users to log their expenses with date, amount, category, and description.
+- **Dashboard Command:** Provides an overview of expenses and budgets in a command line format.
+- **Report Generation Command:** Enables users to generate and view detailed reports of their expenses and budgets.
+- **Backend Services:** Java (Spring Boot) handling business logic.
+- **Database:** MongoDB for storing user data and expense records.
+- **Build Tool:** Maven or Gradle for project management and dependency handling.
+
+**Purpose of Each Component:**
+
+- **Login Command:** Ensures secure access to the application by authenticating users.
+- **Add Expense Command:** Facilitates logging of expenses with all necessary details via command line.
+- **Dashboard Command:** Provides a clear and concise overview of financial data in the command line interface.
+- **Report Generation Command:** Allows users to generate detailed financial reports for better analysis and planning via command line.
+- **Backend Services:** Manages application logic and interactions between components.
+- **Database:** Efficiently stores and retrieves user and expense data.
+- **Build Tool:** Manages project dependencies and builds the application.
+
+**Block Diagram:**
 
 
-#### 3.3.2 Features
+### 3.3.2 Features
 
-Give an account of all the features your solution has. These features may be tabulated (with a title) for improved comprehension.
+**Table 2: Features of DollarDiary**
 
-#### 3.3.3 Environmental Societal Safety and Economic Considerations
+| Feature                          | Description                                                                   |
+|----------------------------------|-------------------------------------------------------------------------------|
+| User Registration and Login      | Secure user authentication using Spring Security with JWT.                    |
+| Logging Expenses                 | Users can log their expenses with date, amount, category, and description.    |
+| Categorizing Expenses            | Expenses can be categorized for better tracking and analysis.                 |
+| Setting and Managing Budgets     | Users can set budgets for different categories.                               |
+| Command Line Dashboard           | Overview of expenses and budgets for easy tracking and management.            |
+| Report Generation                | Users can generate detailed reports of their expenses and budgets.            |
 
-Explain how your engineering design took into account environmental, societal, economic, and other constraints into consideration. It may include how your design has positive contributions to the environment and society. What type of economic decisions you made? How did you make sure that the design is reliable and safe to use?
+### 3.3.3 Environmental, Societal, Safety, and Economic Considerations
 
-#### 3.3.4 Test Cases and Results
+- **Environmental:** The digital nature of the application reduces paper use, contributing to environmental sustainability.
+- **Societal:** Promotes financial literacy and responsible spending habits among users, contributing to societal financial health.
+- **Economic:** Free or low-cost access to personal finance management tools helps users save money and plan better financially.
+- **Safety:** Secure authentication and data encryption ensure user data privacy and protection.
 
-What test suits did you design to test your prototype? How did you execute the test cases to test the prototype?
+### 3.3.4 Test Cases and Results
 
-#### 3.3.5 Limitations
+**Test Suites Designed:**
 
-Every product has some limitations and so is the case with your design product. Highlight some of the limitations of your solution here.
+1. **Path Testing:**
+   - Choose a function, such as logging an expense, and verify all possible execution paths are tested.
+   - *Summary:* These tests ensure that all possible execution paths for a chosen function are tested to uncover any hidden bugs.
 
+2. **Data Flow Testing:**
+   - Track the flow of data within the application to ensure variables are properly initialized, used, and finalized.
+   - *Summary:* These tests validate the data flow within the application to ensure variables are used correctly throughout their lifecycle.
+
+3. **Logic Coverage:**
+   - Ensure all logical conditions within functions, such as if-else statements in the budget setting functionality, are tested.
+   - *Summary:* These tests ensure that all logical conditions and branches in the code are tested for correctness.
+
+4. **Integration Testing:**
+   - Test the interaction between components, such as logging an expense and updating the dashboard.
+   - *Summary:* These tests verify that different components of the application interact correctly and work seamlessly together.
+
+5. **Boundary Value Testing:**
+    - Test edge cases, such as the maximum and minimum values for expense amounts.
+    - *Summary:* These tests ensure the application handles edge cases and boundary values correctly.
+
+6. **Equivalence Class Testing:**
+    - Group inputs into classes and test representative values from each class.
+    - *Summary:* These tests validate that the application behaves correctly for representative values from different input classes.
+
+7. **Decision Tables Testing:**
+    - Define and test decision tables for various features, such as budget notifications.
+    - *Summary:* These tests ensure that the application's decision-making logic is correct by using decision tables.
+
+8. **State Transition Testing:**
+    - Validate state transitions, such as logging in, logging an expense, and logging out.
+    - *Summary:* These tests ensure that the application transitions correctly between different states based on user actions.
+
+9. **Use Case Testing:**
+    - Create and test use cases based on user interactions with the application.
+    - *Summary:* These tests validate that the application performs correctly for various user scenarios and interactions.
+
+**Execution of Test Cases:**
+
+- Automated tests using JUnit.
+- Manual testing for command line interface and user experience validation.
+
+### 3.3.5 Limitations
+
+- **Scalability Challenges:** As the user base grows, database performance may need optimization.
+- **User Interface Learning Curve:** Some users might find the command line interface complex initially.
+- **Integration Issues:** Future integration with third-party services might introduce challenges.
+
+Overall, the final solution for DollarDiary provides a robust and comprehensive expense tracking system that is user-friendly, secure, and scalable, addressing the limitations of previous solutions.
 ## 4. Team Work
 
 ### 4.1 Meeting 1
