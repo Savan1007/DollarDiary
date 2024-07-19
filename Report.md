@@ -230,7 +230,7 @@ The final solution is superior to the previous ones because it incorporates comp
     - Test edge cases, such as the maximum and minimum values for expense amounts.
     - *Summary:* These tests ensure the application handles edge cases and boundary values correctly.
 
-6. **Equivalence Class Testing:**
+6. **[Equivalence Class Testing:](Test%20Planning/Equivalence_Class_Testing.md#strong-robust-equivalence-class-testing)**
     - Group inputs into classes and test representative values from each class.
     - *Summary:* These tests validate that the application behaves correctly for representative values from different input classes.
 
