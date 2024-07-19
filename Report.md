@@ -137,12 +137,12 @@ The second solution builds on the first by incorporating expense categorization.
 
 - Enhanced Functionality: Including categorization makes the application more useful for users trying to understand and manage their spending patterns.
 - Better User Engagement: These additional features help users track their finances more effectively, leading to better retention.
-- Partial Implementation of User Feedback: This solution addresses some of the key features requested by users, making it more attractive where many applications offer more comprehensive financial management tools.
+- Partial Implementation of User Feedback through Error Messages: This solution addresses some of the key features requested by users, making it more effective.
 
 **Reason for not selecting this solution:**
 
 - Scalability Issues: Adding categorization without considering scalability might lead to performance issues as the number of users grows.
-- User Experience Complexity: While adding these features improves functionality, it may also complicate the user commandline interface, making it less intuitive for users who prefer simplicity.
+- User Experience Complexity: While adding these features improves functionality, it may also complicate the user command line interface, making it less intuitive for users who prefer simplicity.
 - Integration Challenges: Implementing these additional features might introduce complexities in integrating and maintaining the application, leading to potential technical debt and increased maintenance efforts.
 
 ### 3.3 Final Solution
