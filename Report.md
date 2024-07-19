@@ -226,7 +226,7 @@ The final solution is superior to the previous ones because it incorporates comp
    - Test the interaction between components, such as logging an expense and updating the dashboard.
    - *Summary:* These tests verify that different components of the application interact correctly and work seamlessly together.
 
-5. **Boundary Value Testing:**
+5. **[Boundary Value Testing:](Test%20Planning/Boundary_Value_Analysis.md#robust-boundary-value-analysis)**
     - Test edge cases, such as the maximum and minimum values for expense amounts.
     - *Summary:* These tests ensure the application handles edge cases and boundary values correctly.
 
