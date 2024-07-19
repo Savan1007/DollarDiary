@@ -131,23 +131,23 @@ The first solution involves developing the DollarDiary application using Java wi
 
 ### 3.2 Solution 2
 
-The second solution builds on the first by incorporating expense categorization and budget setting.
+The second solution builds on the first by incorporating expense categorization.
 
 **Advantages over solution 1:**
 
-- Enhanced Functionality: Including categorization and budget setting makes the application more useful for users trying to understand and manage their spending patterns.
+- Enhanced Functionality: Including categorization makes the application more useful for users trying to understand and manage their spending patterns.
 - Better User Engagement: These additional features help users track their finances more effectively, leading to better retention.
 - Partial Implementation of User Feedback: This solution addresses some of the key features requested by users, making it more attractive where many applications offer more comprehensive financial management tools.
 
 **Reason for not selecting this solution:**
 
-- Scalability Issues: Adding categorization and budget setting without considering scalability might lead to performance issues as the number of users grows.
-- User Experience Complexity: While adding these features improves functionality, it may also complicate the user interface, making it less intuitive for users who prefer simplicity.
+- Scalability Issues: Adding categorization without considering scalability might lead to performance issues as the number of users grows.
+- User Experience Complexity: While adding these features improves functionality, it may also complicate the user commandline interface, making it less intuitive for users who prefer simplicity.
 - Integration Challenges: Implementing these additional features might introduce complexities in integrating and maintaining the application, leading to potential technical debt and increased maintenance efforts.
 
 ### 3.3 Final Solution
 
-The final solution is superior to the previous ones because it incorporates comprehensive features that enhance user engagement and functionality without compromising scalability or user experience. Including Report generation, limits ensure users maintain disciplined spending habits, and a user-friendly Command-Line interface offers a clear overview of their finances.
+The final solution is superior to the previous ones because it incorporates comprehensive features that enhance user engagement and functionality without compromising scalability or user experience. Including Report generation ensures users maintain disciplined spending habits, by using authentication one can make their spending private and a user-friendly Command-Line interface offers a clear overview of their finances.
 
 #### 3.3.1 Components
 
