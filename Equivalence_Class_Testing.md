@@ -6,7 +6,7 @@
 - **Year:** (-∞, 2023), [2023, 2025], (2025, ∞)
 - **Categories:** (-∞, 1), [1, 6], (6, ∞)
 
-## Equivalence classes of valid values
+## Equivalence classes of Valid and Invalid values
 
 - **NV1** = {Month: -∞ < month ≤ 0}
 - **V1** = {Month: 1 ≤ month ≤ 12}
