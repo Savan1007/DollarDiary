@@ -234,15 +234,15 @@ The final solution is superior to the previous ones because it incorporates comp
     - Group inputs into classes and test representative values from each class.
     - *Summary:* These tests validate that the application behaves correctly for representative values from different input classes.
 
-7. **Decision Tables Testing:**
+7. **[Decision Tables Testing:](Test%20Planning/Decision_table.md#dicision-table-based-testing)**
     - Define and test decision tables for various features, such as budget notifications.
     - *Summary:* These tests ensure that the application's decision-making logic is correct by using decision tables.
 
-8. **State Transition Testing:**
+8. **[State Transition Testing:](Test%20Planning/State_Transition.md#state-transition)**
     - Validate state transitions, such as logging in, logging an expense, and logging out.
     - *Summary:* These tests ensure that the application transitions correctly between different states based on user actions.
 
-9. **Use Case Testing:**
+9. **[Use Case Testing:](Test%20Planning/Use_case_diagram_testing.md#use-case-based-testing)**
     - Create and test use cases based on user interactions with the application.
     - *Summary:* These tests validate that the application performs correctly for various user scenarios and interactions.
 
