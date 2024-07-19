@@ -2,7 +2,7 @@
 
 ## State Transition Diagram
 
-
+![State Transition Diagram](Assests/State_transition.png)
 
 ## State Transition Table
 
@@ -26,7 +26,7 @@ Here is a test to cover all transitions.
 | S7    | Expense Deleted          |
 | S8    | Report generated         |
 | S9    | Choose Login             |
-| S10   |                          |
+| S10   |           -               |
 
 ## Corresponding State Table
 
