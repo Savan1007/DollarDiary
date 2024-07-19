@@ -12,14 +12,14 @@ Overall, DollarDiary aims to provide a seamless and efficient way for users to m
 
 ## Features
 
-- User registration and login
+- Command-Line User registration and login
 - Logging expenses with date, amount, category, and description
 - Categorizing expenses into categories
 - Setting and managing budgets for different categories
+- Report Generation of the current and past expenses
 
 ## Technology Stack
-
-- **Frontend:** HTML, CSS, JavaScript 
+ 
 - **Backend:** Java (Spring Boot)
 - **Database:** MongoDB
 - **Authentication:** Spring Security with JWT
