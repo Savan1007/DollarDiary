@@ -172,64 +172,120 @@ Every product has some limitations and so is the case with your design product. 
 
 | Team Member        | Previous Task | Completion State | Next Task                      |
 |--------------------|---------------|------------------|--------------------------------|
-| Aliasgar Mithawala | N/A           | N/A              | Research on Spring Boot        |
-| Savan Pedhadiya    | N/A           | N/A              | Database Schema Design         |
-| Jay Panchal        | N/A           | N/A              | Frontend Development Research  |
+| Aliasgar Mithawala | N/A           | N/A              | Collect Design Constraints       |
+| Savan Pedhadiya    | N/A           | N/A              | Collect Functional Requirements         |
+| Jay Panchal        | N/A           | N/A              | Collect Objectives  |
 
 ### 4.2 Meeting 2
 
-**Time:** June 3, 2024, 12:00 pm to 2:00 pm
+**Time:** May 31, 2024, 3: 00 pm to 4: 30 pm
 **Agenda:** Progress Check and Discussion
 
 | Team Member        | Previous Task               | Completion State | Next Task                      |
 |--------------------|-----------------------------|------------------|--------------------------------|
-| Aliasgar Mithawala | Research on Spring Boot     | Completed        | Start Backend Implementation   |
-| Savan Pedhadiya    | Database Schema Design      | Completed        | Database Implementation        |
-| Jay Panchal        | Frontend Development Research | Completed        | Start Frontend Development     |
+| Aliasgar Mithawala | Collect Design Constraints     | Done         | Documentation for 4th week submission   |
+| Savan Pedhadiya    | Collect Functional Requirements | Done        | Review of document and gathering project constraints    |
+| Jay Panchal        | Collect Objectives          | Done         | Review of document and gathering project constraints |
 
 ### 4.3 Meeting 3
 
-**Time:** June 10, 2024, 12:00 pm to 2:00 pm
-**Agenda:** Development Progress
+**Time:** Jun 7, 2024, 3: 00 pm to 4: 30 pm
+**Agenda:** Progress Check and Discussion
 
 | Team Member        | Previous Task                  | Completion State | Next Task                      |
 |--------------------|--------------------------------|------------------|--------------------------------|
-| Aliasgar Mithawala | Start Backend Implementation   | Ongoing          | Continue Backend Development   |
-| Savan Pedhadiya    | Database Implementation        | Ongoing          | Continue Database Development  |
-| Jay Panchal        | Start Frontend Development     | Ongoing          | Continue Frontend Development  |
+| Aliasgar Mithawala | Documentation for 4th week submission   | Done          | Finding solutions for project definition.   |
+| Savan Pedhadiya    | Review of document and gathering project constraints         | Done         | Finding solutions for project definition  |
+| Jay Panchal        | Review of document and gathering project constraints       | Done          | Finding solutions for project definition |
 
 ### 4.4 Meeting 4
 
-**Time:** June 17, 2024, 12:00 pm to 2:00 pm
-**Agenda:** Integration
+**Time:** Jun 14, 2024, 3: 00 pm to 4: 30 pm
+**Agenda:** Distribution of Project Tasks
 
 | Team Member        | Previous Task                 | Completion State | Next Task                      |
 |--------------------|-------------------------------|------------------|--------------------------------|
-| Aliasgar Mithawala | Continue Backend Development  | Ongoing          | Integration Testing            |
-| Savan Pedhadiya    | Continue Database Development | Ongoing          | Integration Testing            |
-| Jay Panchal        | Continue Frontend Development | Ongoing          | Integration Testing            |
+| Aliasgar Mithawala | Finding solutions for project definition.  | Done        | Start Backend Implementation.           |
+| Savan Pedhadiya    | Finding solutions for project definition. | Done         | Start Backend Implementation.           |
+| Jay Panchal        | Finding solutions for project definition. | Done          | Start Backend Implementation.           |
 
 ### 4.5 Meeting 5
 
-**Time:** June 24, 2024, 12:00 pm to 2:00 pm
-**Agenda:** Testing and Bug Fixing
+**Time:** Jun 17, 2024, 3: 00 pm to 4: 30 pm
+**Agenda:** Development Progress
 
 | Team Member        | Previous Task            | Completion State | Next Task                    |
 |--------------------|--------------------------|------------------|------------------------------|
-| Aliasgar Mithawala | Integration Testing      | Ongoing          | Bug Fixing                   |
-| Savan Pedhadiya    | Integration Testing      | Ongoing          | Bug Fixing                   |
-| Jay Panchal        | Integration Testing      | Ongoing          | Bug Fixing                   |
+| Aliasgar Mithawala | Start Backend Implementation.      | Ongoing          | Gathering response and documentation of week – 7 submissions.                |
+| Savan Pedhadiya    | Start Backend Implementation.      | Ongoing          | Continue Implementation of project              |
+| Jay Panchal        | Start Backend Implementation.      | Ongoing          | Continue Implementation of project              |
 
 ### 4.6 Meeting 6
 
-**Time:** July 1, 2024, 12:00 pm to 2:00 pm
+**Time:** Jun 21, 2024, 3: 00 pm to 4: 30 pm
+**Agenda:** Development Progress
+
+| Team Member        | Previous Task        | Completion State | Next Task                          |
+|--------------------|----------------------|------------------|------------------------------------|
+| Aliasgar Mithawala | Gathering response and documentation of week – 7 submissions.         | Done          | Started working on Robust BVA, and Robust Equivalence class Testing for project  |
+| Savan Pedhadiya    | Continue Implementation of project        | Done         | Stated working on Database Implementation.   |
+| Jay Panchal        | Continue Implementation of project         | Done         | Started Documentation for Project.    |
+
+### 4.6 Meeting 7
+
+**Time:** Jun 28, 2024, 3: 00 pm to 4: 30 pm
+**Agenda:** Development Progress and test planning
+
+| Team Member        | Previous Task        | Completion State | Next Task                          |
+|--------------------|----------------------|------------------|------------------------------------|
+| Aliasgar Mithawala | Started working on Robust BVA, and Robust Equivalence class Testing for project   | Done          | Started making Decision table, state transition and Use case Testing for project.       |
+| Savan Pedhadiya    | Stated working on Database Implementation.     | Ongoing       | Started Unit Testing for report feature      |
+| Jay Panchal        | Started Documentation for the Project.   | Ongoing      | Started Unit Testing for report feature     |
+
+### 4.6 Meeting 8
+
+**Time:** July 5, 2024, 3: 00 pm to 4: 30 pm
+**Agenda:** Unit testing and Integration testing
+
+| Team Member        | Previous Task        | Completion State | Next Task                          |
+|--------------------|----------------------|------------------|------------------------------------|
+| Aliasgar Mithawala | Started making Decision table, state transition, and Use case Testing for the project.      | Done          | Integration Testing and Unit Testing  |
+| Savan Pedhadiya    | Started Unit Testing for report feature     | Ongoing        | Integration Testing and Unit Testing  |
+| Jay Panchal        | Started Unit Testing for report feature  | Ongoing        | Integration Testing and Unit Testing |
+
+### 4.6 Meeting 9
+
+**Time:** July 5, 2024, 3: 00 pm to 4: 30 pm
+**Agenda:** Bug Fixing
+
+| Team Member        | Previous Task        | Completion State | Next Task                          |
+|--------------------|----------------------|------------------|------------------------------------|
+| Aliasgar Mithawala | Integration Testing and Unit Testing  | Ongoing          | Bug Fixing   |
+| Savan Pedhadiya    | Integration Testing and Unit Testing  | Ongoing        | Bug Fixing   |
+| Jay Panchal        | Integration Testing and Unit Testing   | Ongoing       | Bug Fixing   |
+
+### 4.6 Meeting 10
+
+**Time:** July 12, 2024, 3: 00 pm to 4: 30 pm
+**Agenda:** Documentation and Bug Fixing
+
+| Team Member        | Previous Task        | Completion State | Next Task                          |
+|--------------------|----------------------|------------------|------------------------------------|
+| Aliasgar Mithawala | Bug Fixing | Done          | Whole Project documentation and submitting on GitHub  |
+| Savan Pedhadiya    | Bug Fixing | Done         | Whole Project documentation and submitting on GitHub |
+| Jay Panchal        | Bug Fixing  | Done         | Whole Project documentation and submitting on GitHub |
+
+### 4.6 Meeting 11
+
+**Time:** July 17, 2024, 3: 00 pm to 4: 30 pm
 **Agenda:** Final Review and Presentation Preparation
 
 | Team Member        | Previous Task        | Completion State | Next Task                          |
 |--------------------|----------------------|------------------|------------------------------------|
-| Aliasgar Mithawala | Bug Fixing           | Completed        | Prepare for Presentation          |
-| Savan Pedhadiya    | Bug Fixing           | Completed        | Prepare for Presentation          |
-| Jay Panchal        | Bug Fixing           | Completed        | Prepare for Presentation          |
+| Aliasgar Mithawala | Whole Project documentation and submitting on GitHub  | Done          | Project Submission and presentation  |
+| Savan Pedhadiya    | Whole Project documentation and submitting on GitHub | Done         | Project Submission and presentation  |
+| Jay Panchal        | Whole Project documentation and submitting on GitHub  | Done         | Project Submission and presentation |
+
 
 ## 5. Project Management
 
