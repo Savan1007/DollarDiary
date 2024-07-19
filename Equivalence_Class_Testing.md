@@ -22,30 +22,30 @@
 
 | Test Case | Month | Year | Categories | Expected Output |
 |-----------|-------|------|------------|-----------------|
-| 1         | 0     | 2022 | 0          | Invalid         |
-| 2         | 0     | 2022 | 5          | Invalid         |
-| 3         | 0     | 2022 | 7          | Invalid         |
-| 4         | 0     | 2024 | 0          | Invalid         |
-| 5         | 0     | 2024 | 5          | Invalid         |
-| 6         | 0     | 2024 | 7          | Invalid         |
-| 7         | 0     | 2026 | 0          | Invalid         |
-| 8         | 0     | 2026 | 5          | Invalid         |
-| 9         | 0     | 2026 | 7          | Invalid         |
-| 10        | 0     | 2022 | 0          | Invalid         |
-| 11        | 6     | 2022 | 5          | Invalid         |
-| 12        | 6     | 2022 | 7          | Invalid         |
-| 13        | 6     | 2024 | 0          | Invalid         |
-| 14        | 6     | 2024 | 5          | Valid           |
-| 15        | 6     | 2024 | 7          | Invalid         |
-| 16        | 6     | 2026 | 0          | Invalid         |
-| 17        | 6     | 2026 | 5          | Invalid         |
-| 18        | 6     | 2026 | 7          | Invalid         |
-| 19        | 13    | 2022 | 0          | Invalid         |
-| 20        | 13    | 2022 | 5          | Invalid         |
-| 21        | 13    | 2022 | 7          | Invalid         |
-| 22        | 13    | 2024 | 0          | Invalid         |
-| 23        | 13    | 2024 | 5          | Invalid         |
-| 24        | 13    | 2024 | 7          | Invalid         |
-| 25        | 13    | 2026 | 0          | Invalid         |
-| 26        | 13    | 2026 | 5          | Invalid         |
-| 27        | 13    | 2026 | 7          | Invalid         |
+| 1         | 0     | 2022 | 0          | Report Not Generated         |
+| 2         | 0     | 2022 | 5          | Report Not Generated         |
+| 3         | 0     | 2022 | 7          | Report Not Generated         |
+| 4         | 0     | 2024 | 0          | Report Not Generated         |
+| 5         | 0     | 2024 | 5          | Report Not Generated         |
+| 6         | 0     | 2024 | 7          | Report Not Generated         |
+| 7         | 0     | 2026 | 0          | Report Not Generated         |
+| 8         | 0     | 2026 | 5          | Report Not Generated         |
+| 9         | 0     | 2026 | 7          | Report Not Generated         |
+| 10        | 0     | 2022 | 0          | Report Not Generated        |
+| 11        | 6     | 2022 | 5          | Report Not Generated         |
+| 12        | 6     | 2022 | 7          | Report Not Generated         |
+| 13        | 6     | 2024 | 0          | Report Not Generated         |
+| 14        | 6     | 2024 | 5          | Report Generated           |
+| 15        | 6     | 2024 | 7          | Report Not Generated         |
+| 16        | 6     | 2026 | 0          | Report Not Generated         |
+| 17        | 6     | 2026 | 5          | Report Not Generated         |
+| 18        | 6     | 2026 | 7          | Report Not Generated         |
+| 19        | 13    | 2022 | 0          | Report Not Generated         |
+| 20        | 13    | 2022 | 5          | Report Not Generated         |
+| 21        | 13    | 2022 | 7          | Report Not Generated         |
+| 22        | 13    | 2024 | 0          | Report Not Generated         |
+| 23        | 13    | 2024 | 5          | Report Not Generated         |
+| 24        | 13    | 2024 | 7          | Report Not Generated         |
+| 25        | 13    | 2026 | 0          | Report Not Generated         |
+| 26        | 13    | 2026 | 5          | Report Not Generated         |
+| 27        | 13    | 2026 | 7          | Report Not Generated         |
