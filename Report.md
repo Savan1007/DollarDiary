@@ -146,7 +146,6 @@ This is the final solution. Explain why it is better than other solutions. You m
 
 What components you used in the solution? What is the main purpose of using individual components? Provide a block diagram (with a numbered caption such as Fig. 1) representing the connectivity and interaction between all the components.
 
-![Component Interaction](images/component_interaction.png)
 
 #### 3.3.2 Features
 
