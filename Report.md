@@ -235,7 +235,7 @@ The final solution is superior to the previous ones because it incorporates comp
     - *Summary:* These tests validate that the application behaves correctly for representative values from different input classes.
 
 7. **[Decision Tables Testing:](Test%20Planning/Decision_table.md#dicision-table-based-testing)**
-    - Define and test decision tables for various features, such as budget notifications.
+    - Define and test decision tables for various features, such as Report Generation.
     - *Summary:* These tests ensure that the application's decision-making logic is correct by using decision tables.
 
 8. **[State Transition Testing:](Test%20Planning/State_Transition.md#state-transition)**
