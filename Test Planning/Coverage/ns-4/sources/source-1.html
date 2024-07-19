@@ -1,0 +1,358 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > ExpenseService</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+    @import "../../.css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../.js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example.demo.service</a>
+</div>
+
+<h1>Coverage Summary for Class: ExpenseService (com.example.demo.service)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ExpenseService</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (8/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    95.1%
+  </span>
+  <span class="absValue">
+    (117/123)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">ExpenseService$MockitoMock$wJ1a3RAh</td>
+  </tr>
+  <tr>
+    <td class="name">ExpenseService$MockitoMock$wJ1a3RAh$auxiliary$ApgGbnrV</td>
+  </tr>
+  <tr>
+    <td class="name">ExpenseService$MockitoMock$wJ1a3RAh$auxiliary$lNPi1FjE</td>
+  </tr>
+  <tr>
+    <td class="name">ExpenseService$MockitoMock$wJ1a3RAh$auxiliary$LYMDgZTe</td>
+  </tr>
+  <tr>
+    <td class="name">ExpenseService$MockitoMock$wJ1a3RAh$auxiliary$mqxgXGFT</td>
+  </tr>
+  <tr>
+    <td class="name">ExpenseService$MockitoMock$wJ1a3RAh$auxiliary$niBmGuG9</td>
+  </tr>
+  <tr>
+    <td class="name">ExpenseService$MockitoMock$wJ1a3RAh$auxiliary$rj3bpcDP</td>
+  </tr>
+  <tr>
+    <td class="name">ExpenseService$MockitoMock$wJ1a3RAh$auxiliary$ykoVGJTj</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (8/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    95.1%
+  </span>
+  <span class="absValue">
+    (117/123)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.example.demo.service;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import com.example.demo.InputReader;
+<i class="no-highlight">4</i>&nbsp;import com.example.demo.config.MongoDBConnector;
+<i class="no-highlight">5</i>&nbsp;import com.example.demo.model.Expense;
+<i class="no-highlight">6</i>&nbsp;import com.example.demo.repository.ExpenseRepository;
+<i class="no-highlight">7</i>&nbsp;import com.mongodb.client.MongoCollection;
+<i class="no-highlight">8</i>&nbsp;import com.mongodb.client.model.Filters;
+<i class="no-highlight">9</i>&nbsp;import com.mongodb.client.model.Updates;
+<i class="no-highlight">10</i>&nbsp;import org.bson.conversions.Bson;
+<i class="no-highlight">11</i>&nbsp;import org.springframework.beans.factory.annotation.Autowired;
+<i class="no-highlight">12</i>&nbsp;import org.springframework.stereotype.Service;
+<i class="no-highlight">13</i>&nbsp;import org.bson.Document;
+<i class="no-highlight">14</i>&nbsp;
+<i class="no-highlight">15</i>&nbsp;import java.time.LocalDate;
+<i class="no-highlight">16</i>&nbsp;import java.time.format.DateTimeFormatter;
+<i class="no-highlight">17</i>&nbsp;import java.util.ArrayList;
+<i class="no-highlight">18</i>&nbsp;import java.util.List;
+<i class="no-highlight">19</i>&nbsp;import java.util.Scanner;
+<i class="no-highlight">20</i>&nbsp;import java.util.stream.IntStream;
+<i class="no-highlight">21</i>&nbsp;
+<i class="no-highlight">22</i>&nbsp;@Service
+<i class="no-highlight">23</i>&nbsp;public class ExpenseService {
+<i class="no-highlight">24</i>&nbsp;    private final MongoCollection&lt;Document&gt; collection;
+<i class="no-highlight">25</i>&nbsp;
+<b class="fc"><i class="no-highlight">26</i>&nbsp;    public ExpenseService() {</b>
+<b class="fc"><i class="no-highlight">27</i>&nbsp;        collection = MongoDBConnector.getDatabase().getCollection(&quot;expenses&quot;);</b>
+<b class="fc"><i class="no-highlight">28</i>&nbsp;    }</b>
+<i class="no-highlight">29</i>&nbsp;
+<i class="no-highlight">30</i>&nbsp;    public boolean addExpense(String userId, InputReader inputReader) {
+<i class="no-highlight">31</i>&nbsp;        try{
+<b class="fc"><i class="no-highlight">32</i>&nbsp;            Scanner scanner = new Scanner(System.in);</b>
+<b class="fc"><i class="no-highlight">33</i>&nbsp;            System.out.println(&quot;Enter category:&quot;);</b>
+<b class="fc"><i class="no-highlight">34</i>&nbsp;            String category = inputReader.nextLine();</b>
+<b class="fc"><i class="no-highlight">35</i>&nbsp;            System.out.println(&quot;Enter amount:&quot;);</b>
+<b class="fc"><i class="no-highlight">36</i>&nbsp;            double amount = inputReader.nextDouble();</b>
+<b class="fc"><i class="no-highlight">37</i>&nbsp;            inputReader.nextLine(); // consume newline</b>
+<b class="fc"><i class="no-highlight">38</i>&nbsp;            System.out.println(&quot;Enter description:&quot;);</b>
+<b class="fc"><i class="no-highlight">39</i>&nbsp;            String description = inputReader.nextLine();</b>
+<b class="fc"><i class="no-highlight">40</i>&nbsp;            System.out.println(&quot;Enter date (YYYY-MM-DD):&quot;);</b>
+<b class="fc"><i class="no-highlight">41</i>&nbsp;            String dateInput = inputReader.nextLine();</b>
+<i class="no-highlight">42</i>&nbsp;
+<b class="fc"><i class="no-highlight">43</i>&nbsp;            LocalDate date = LocalDate.parse(dateInput, DateTimeFormatter.ISO_LOCAL_DATE);</b>
+<i class="no-highlight">44</i>&nbsp;
+<b class="fc"><i class="no-highlight">45</i>&nbsp;            Document doc = new Document(&quot;userId&quot;, userId)</b>
+<b class="fc"><i class="no-highlight">46</i>&nbsp;                    .append(&quot;category&quot;, category)</b>
+<b class="fc"><i class="no-highlight">47</i>&nbsp;                    .append(&quot;amount&quot;, amount)</b>
+<b class="fc"><i class="no-highlight">48</i>&nbsp;                    .append(&quot;date&quot;, date.toString())</b>
+<b class="fc"><i class="no-highlight">49</i>&nbsp;                    .append(&quot;description&quot;, description);</b>
+<i class="no-highlight">50</i>&nbsp;
+<b class="fc"><i class="no-highlight">51</i>&nbsp;            collection.insertOne(doc);</b>
+<b class="fc"><i class="no-highlight">52</i>&nbsp;            System.out.println(&quot;Expense added!&quot;);</b>
+<b class="fc"><i class="no-highlight">53</i>&nbsp;            return true;</b>
+<i class="no-highlight">54</i>&nbsp;
+<b class="fc"><i class="no-highlight">55</i>&nbsp;        } catch (Exception e) {</b>
+<b class="fc"><i class="no-highlight">56</i>&nbsp;            return false;</b>
+<i class="no-highlight">57</i>&nbsp;        }
+<i class="no-highlight">58</i>&nbsp;    }
+<i class="no-highlight">59</i>&nbsp;
+<i class="no-highlight">60</i>&nbsp;    private void displayExpenses(List&lt;Document&gt; expenses) {
+<b class="fc"><i class="no-highlight">61</i>&nbsp;        if (expenses.isEmpty()) {</b>
+<b class="fc"><i class="no-highlight">62</i>&nbsp;            System.out.println(&quot;No expenses found.&quot;);</b>
+<b class="fc"><i class="no-highlight">63</i>&nbsp;            return;</b>
+<i class="no-highlight">64</i>&nbsp;        }
+<i class="no-highlight">65</i>&nbsp;
+<b class="fc"><i class="no-highlight">66</i>&nbsp;        IntStream.range(0, expenses.size())</b>
+<b class="fc"><i class="no-highlight">67</i>&nbsp;                .forEach(i -&gt; {</b>
+<b class="fc"><i class="no-highlight">68</i>&nbsp;                    Document exp = expenses.get(i);</b>
+<b class="fc"><i class="no-highlight">69</i>&nbsp;                    System.out.printf(&quot;%d. %s | %s | $%.2f | %s | %s%n&quot;,</b>
+<b class="fc"><i class="no-highlight">70</i>&nbsp;                            i + 1,</b>
+<b class="fc"><i class="no-highlight">71</i>&nbsp;                            exp.getString(&quot;category&quot;),</b>
+<b class="fc"><i class="no-highlight">72</i>&nbsp;                            exp.getString(&quot;date&quot;),</b>
+<b class="fc"><i class="no-highlight">73</i>&nbsp;                            exp.getDouble(&quot;amount&quot;),</b>
+<b class="fc"><i class="no-highlight">74</i>&nbsp;                            exp.getString(&quot;description&quot;),</b>
+<b class="fc"><i class="no-highlight">75</i>&nbsp;                            exp.getObjectId(&quot;_id&quot;));</b>
+<b class="fc"><i class="no-highlight">76</i>&nbsp;                });</b>
+<b class="fc"><i class="no-highlight">77</i>&nbsp;    }</b>
+<i class="no-highlight">78</i>&nbsp;
+<i class="no-highlight">79</i>&nbsp;    public void readExpenses(String userId) {
+<b class="fc"><i class="no-highlight">80</i>&nbsp;        List&lt;Document&gt; expenses = collection.find(Filters.eq(&quot;userId&quot;, userId)).into(new ArrayList&lt;&gt;());</b>
+<b class="fc"><i class="no-highlight">81</i>&nbsp;        displayExpenses(expenses);</b>
+<b class="fc"><i class="no-highlight">82</i>&nbsp;    }</b>
+<i class="no-highlight">83</i>&nbsp;
+<i class="no-highlight">84</i>&nbsp;    public boolean updateExpense(String userId, InputReader inputReader) {
+<i class="no-highlight">85</i>&nbsp;        try {
+<b class="fc"><i class="no-highlight">86</i>&nbsp;            List&lt;Document&gt; expenses = collection.find(Filters.eq(&quot;userId&quot;, userId)).into(new ArrayList&lt;&gt;());</b>
+<b class="fc"><i class="no-highlight">87</i>&nbsp;            displayExpenses(expenses);</b>
+<i class="no-highlight">88</i>&nbsp;
+<b class="fc"><i class="no-highlight">89</i>&nbsp;            System.out.println(&quot;Select an expense number to update:&quot;);</b>
+<b class="fc"><i class="no-highlight">90</i>&nbsp;            int choice = inputReader.nextInt();</b>
+<b class="fc"><i class="no-highlight">91</i>&nbsp;            inputReader.nextLine(); // consume newline</b>
+<i class="no-highlight">92</i>&nbsp;
+<b class="fc"><i class="no-highlight">93</i>&nbsp;            if (choice &lt; 1 || choice &gt; expenses.size()) {</b>
+<b class="fc"><i class="no-highlight">94</i>&nbsp;                System.out.println(&quot;Invalid choice!&quot;);</b>
+<b class="fc"><i class="no-highlight">95</i>&nbsp;                return false;</b>
+<i class="no-highlight">96</i>&nbsp;            }
+<i class="no-highlight">97</i>&nbsp;
+<b class="fc"><i class="no-highlight">98</i>&nbsp;            Document selectedExpense = expenses.get(choice - 1);</b>
+<b class="fc"><i class="no-highlight">99</i>&nbsp;            System.out.println(&quot;Enter new category:&quot;);</b>
+<b class="fc"><i class="no-highlight">100</i>&nbsp;            String category = inputReader.nextLine();</b>
+<b class="fc"><i class="no-highlight">101</i>&nbsp;            System.out.println(&quot;Enter new amount:&quot;);</b>
+<b class="fc"><i class="no-highlight">102</i>&nbsp;            double amount = inputReader.nextDouble();</b>
+<b class="fc"><i class="no-highlight">103</i>&nbsp;            inputReader.nextLine(); // consume newline</b>
+<b class="fc"><i class="no-highlight">104</i>&nbsp;            System.out.println(&quot;Enter new description:&quot;);</b>
+<b class="fc"><i class="no-highlight">105</i>&nbsp;            String description = inputReader.nextLine();</b>
+<b class="fc"><i class="no-highlight">106</i>&nbsp;            System.out.println(&quot;Enter new date (YYYY-MM-DD):&quot;);</b>
+<b class="fc"><i class="no-highlight">107</i>&nbsp;            String dateInput = inputReader.nextLine();</b>
+<i class="no-highlight">108</i>&nbsp;
+<b class="fc"><i class="no-highlight">109</i>&nbsp;            LocalDate date = LocalDate.parse(dateInput, DateTimeFormatter.ISO_LOCAL_DATE);</b>
+<i class="no-highlight">110</i>&nbsp;
+<b class="fc"><i class="no-highlight">111</i>&nbsp;            Bson updates = Updates.combine(</b>
+<b class="fc"><i class="no-highlight">112</i>&nbsp;                    Updates.set(&quot;category&quot;, category),</b>
+<b class="fc"><i class="no-highlight">113</i>&nbsp;                    Updates.set(&quot;amount&quot;, amount),</b>
+<b class="fc"><i class="no-highlight">114</i>&nbsp;                    Updates.set(&quot;date&quot;, date.toString()),</b>
+<b class="fc"><i class="no-highlight">115</i>&nbsp;                    Updates.set(&quot;description&quot;, description)</b>
+<i class="no-highlight">116</i>&nbsp;            );
+<i class="no-highlight">117</i>&nbsp;
+<b class="fc"><i class="no-highlight">118</i>&nbsp;            collection.updateOne(Filters.eq(&quot;_id&quot;, selectedExpense.getObjectId(&quot;_id&quot;)), updates);</b>
+<b class="fc"><i class="no-highlight">119</i>&nbsp;            System.out.println(&quot;Expense updated!&quot;);</b>
+<b class="fc"><i class="no-highlight">120</i>&nbsp;            return true;</b>
+<b class="nc"><i class="no-highlight">121</i>&nbsp;        } catch (Exception e) {</b>
+<b class="nc"><i class="no-highlight">122</i>&nbsp;            return false;</b>
+<i class="no-highlight">123</i>&nbsp;        }
+<i class="no-highlight">124</i>&nbsp;    }
+<i class="no-highlight">125</i>&nbsp;
+<i class="no-highlight">126</i>&nbsp;    public boolean deleteExpense(String userId, InputReader inputReader) {
+<i class="no-highlight">127</i>&nbsp;        try {
+<b class="fc"><i class="no-highlight">128</i>&nbsp;            List&lt;Document&gt; expenses = collection.find(Filters.eq(&quot;userId&quot;, userId)).into(new ArrayList&lt;&gt;());</b>
+<b class="fc"><i class="no-highlight">129</i>&nbsp;            displayExpenses(expenses);</b>
+<i class="no-highlight">130</i>&nbsp;
+<b class="fc"><i class="no-highlight">131</i>&nbsp;            Scanner scanner = new Scanner(System.in);</b>
+<b class="fc"><i class="no-highlight">132</i>&nbsp;            System.out.println(&quot;Select an expense number to delete:&quot;);</b>
+<b class="fc"><i class="no-highlight">133</i>&nbsp;            int choice = inputReader.nextInt();</b>
+<i class="no-highlight">134</i>&nbsp;
+<b class="fc"><i class="no-highlight">135</i>&nbsp;            if (choice &lt; 1 || choice &gt; expenses.size()) {</b>
+<b class="fc"><i class="no-highlight">136</i>&nbsp;                System.out.println(&quot;Invalid choice!&quot;);</b>
+<b class="fc"><i class="no-highlight">137</i>&nbsp;                return false;</b>
+<i class="no-highlight">138</i>&nbsp;            }
+<i class="no-highlight">139</i>&nbsp;
+<b class="fc"><i class="no-highlight">140</i>&nbsp;            Document selectedExpense = expenses.get(choice - 1);</b>
+<b class="fc"><i class="no-highlight">141</i>&nbsp;            collection.deleteOne(Filters.eq(&quot;_id&quot;, selectedExpense.getObjectId(&quot;_id&quot;)));</b>
+<b class="fc"><i class="no-highlight">142</i>&nbsp;            System.out.println(&quot;Expense deleted!&quot;);</b>
+<b class="fc"><i class="no-highlight">143</i>&nbsp;            return true;</b>
+<b class="nc"><i class="no-highlight">144</i>&nbsp;        } catch (Exception e) {</b>
+<b class="nc"><i class="no-highlight">145</i>&nbsp;            return false;</b>
+<i class="no-highlight">146</i>&nbsp;        }
+<i class="no-highlight">147</i>&nbsp;    }
+<i class="no-highlight">148</i>&nbsp;
+<i class="no-highlight">149</i>&nbsp;    public void generateReport(String userId, InputReader inputReader) {
+<b class="fc"><i class="no-highlight">150</i>&nbsp;        Scanner scanner = new Scanner(System.in);</b>
+<i class="no-highlight">151</i>&nbsp;
+<b class="fc"><i class="no-highlight">152</i>&nbsp;        System.out.println(&quot;Select report filters &quot;);</b>
+<b class="fc"><i class="no-highlight">153</i>&nbsp;        System.out.println(&quot;1. month, year and category&quot;);</b>
+<b class="fc"><i class="no-highlight">154</i>&nbsp;        System.out.println(&quot;2. month and year &quot;);</b>
+<b class="fc"><i class="no-highlight">155</i>&nbsp;        System.out.println(&quot;3. category&quot;);</b>
+<b class="fc"><i class="no-highlight">156</i>&nbsp;        int choice = inputReader.nextInt();</b>
+<b class="fc"><i class="no-highlight">157</i>&nbsp;        inputReader.nextLine();</b>
+<b class="fc"><i class="no-highlight">158</i>&nbsp;        String[] selections = new String[]{};</b>
+<b class="fc"><i class="no-highlight">159</i>&nbsp;        if(choice == 1){</b>
+<b class="fc"><i class="no-highlight">160</i>&nbsp;            selections = new String[]{&quot;month&quot;, &quot;year&quot;, &quot;category&quot;};</b>
+<i class="no-highlight">161</i>&nbsp;        }
+<b class="fc"><i class="no-highlight">162</i>&nbsp;        else if(choice == 2){</b>
+<b class="fc"><i class="no-highlight">163</i>&nbsp;            selections = new String[]{&quot;month&quot;, &quot;year&quot;};</b>
+<i class="no-highlight">164</i>&nbsp;        }
+<b class="fc"><i class="no-highlight">165</i>&nbsp;        else if (choice == 3) {</b>
+<b class="fc"><i class="no-highlight">166</i>&nbsp;            selections = new String[]{&quot;category&quot;};</b>
+<i class="no-highlight">167</i>&nbsp;        }
+<i class="no-highlight">168</i>&nbsp;        else {
+<b class="fc"><i class="no-highlight">169</i>&nbsp;            System.out.println(&quot;Invalid Input&quot;);</b>
+<b class="fc"><i class="no-highlight">170</i>&nbsp;            return;</b>
+<i class="no-highlight">171</i>&nbsp;        }
+<i class="no-highlight">172</i>&nbsp;
+<b class="fc"><i class="no-highlight">173</i>&nbsp;        List&lt;Bson&gt; filters = new ArrayList&lt;&gt;();</b>
+<b class="fc"><i class="no-highlight">174</i>&nbsp;        filters.add(Filters.eq(&quot;userId&quot;, userId));</b>
+<i class="no-highlight">175</i>&nbsp;
+<b class="fc"><i class="no-highlight">176</i>&nbsp;        for (String selection : selections) {</b>
+<b class="fc"><i class="no-highlight">177</i>&nbsp;            switch (selection.trim().toLowerCase()) {</b>
+<i class="no-highlight">178</i>&nbsp;                case &quot;month&quot;:
+<b class="fc"><i class="no-highlight">179</i>&nbsp;                    System.out.println(&quot;Enter month (MM):&quot;);</b>
+<b class="fc"><i class="no-highlight">180</i>&nbsp;                    String month = inputReader.nextLine();</b>
+<b class="fc"><i class="no-highlight">181</i>&nbsp;                    filters.add(Filters.regex(&quot;date&quot;, &quot;-&quot;+month+&quot;-&quot;));</b>
+<b class="fc"><i class="no-highlight">182</i>&nbsp;                    break;</b>
+<i class="no-highlight">183</i>&nbsp;                case &quot;year&quot;:
+<b class="fc"><i class="no-highlight">184</i>&nbsp;                    System.out.println(&quot;Enter year (YYYY):&quot;);</b>
+<b class="fc"><i class="no-highlight">185</i>&nbsp;                    String year = inputReader.nextLine();</b>
+<b class="fc"><i class="no-highlight">186</i>&nbsp;                    filters.add(Filters.regex(&quot;date&quot;, &quot;^&quot;+year+&quot;-&quot;));</b>
+<b class="fc"><i class="no-highlight">187</i>&nbsp;                    break;</b>
+<i class="no-highlight">188</i>&nbsp;                case &quot;category&quot;:
+<b class="fc"><i class="no-highlight">189</i>&nbsp;                    System.out.println(&quot;Enter category:&quot;);</b>
+<b class="fc"><i class="no-highlight">190</i>&nbsp;                    String category = inputReader.nextLine();</b>
+<b class="fc"><i class="no-highlight">191</i>&nbsp;                    filters.add(Filters.eq(&quot;category&quot;, category));</b>
+<b class="fc"><i class="no-highlight">192</i>&nbsp;                    break;</b>
+<i class="no-highlight">193</i>&nbsp;                default:
+<b class="nc"><i class="no-highlight">194</i>&nbsp;                    System.out.println(&quot;Invalid selection: &quot; + selection);</b>
+<b class="nc"><i class="no-highlight">195</i>&nbsp;                    return;</b>
+<i class="no-highlight">196</i>&nbsp;            }
+<i class="no-highlight">197</i>&nbsp;        }
+<i class="no-highlight">198</i>&nbsp;
+<b class="fc"><i class="no-highlight">199</i>&nbsp;        Bson finalFilter = Filters.and(filters);</b>
+<b class="fc"><i class="no-highlight">200</i>&nbsp;        List&lt;Document&gt; reportExpenses = collection.find(finalFilter).into(new ArrayList&lt;&gt;());</b>
+<b class="fc"><i class="no-highlight">201</i>&nbsp;        displayExpenses(reportExpenses);</b>
+<b class="fc"><i class="no-highlight">202</i>&nbsp;    }</b>
+<i class="no-highlight">203</i>&nbsp;
+<i class="no-highlight">204</i>&nbsp;//    @Autowired
+<i class="no-highlight">205</i>&nbsp;//    private ExpenseRepository expenseRepository;
+<i class="no-highlight">206</i>&nbsp;//
+<i class="no-highlight">207</i>&nbsp;//    public List&lt;Expense&gt; getAllExpenses(String userId) {
+<i class="no-highlight">208</i>&nbsp;//        return expenseRepository.findByUserId(userId);
+<i class="no-highlight">209</i>&nbsp;//    }
+<i class="no-highlight">210</i>&nbsp;//
+<i class="no-highlight">211</i>&nbsp;//    public Expense addExpense(Expense expense) {
+<i class="no-highlight">212</i>&nbsp;//        return expenseRepository.save(expense);
+<i class="no-highlight">213</i>&nbsp;//    }
+<i class="no-highlight">214</i>&nbsp;//
+<i class="no-highlight">215</i>&nbsp;//    public Expense updateExpense(Expense expense) {
+<i class="no-highlight">216</i>&nbsp;//        return expenseRepository.save(expense);
+<i class="no-highlight">217</i>&nbsp;//    }
+<i class="no-highlight">218</i>&nbsp;//
+<i class="no-highlight">219</i>&nbsp;//    public void deleteExpense(String expenseId) {
+<i class="no-highlight">220</i>&nbsp;//        expenseRepository.deleteById(expenseId);
+<i class="no-highlight">221</i>&nbsp;//    }
+<i class="no-highlight">222</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-07-19 16:07</div>
+</div>
+</body>
+</html>
