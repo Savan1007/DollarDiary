@@ -326,7 +326,7 @@ Overall, the final solution for DollarDiary provides a robust and comprehensive 
 | Savan Pedhadiya    | Continue Implementation of project        | Done         | Stated working on Database Implementation.   |
 | Jay Panchal        | Continue Implementation of project         | Done         | Started Documentation for Project.    |
 
-### 4.6 Meeting 7
+### 4.7 Meeting 7
 
 **Time:** Jun 28, 2024, 3: 00 pm to 4: 30 pm
 **Agenda:** Development Progress and test planning
@@ -337,7 +337,7 @@ Overall, the final solution for DollarDiary provides a robust and comprehensive 
 | Savan Pedhadiya    | Stated working on Database Implementation.     | Ongoing       | Started Unit Testing for report feature      |
 | Jay Panchal        | Started Documentation for the Project.   | Ongoing      | Started Unit Testing for report feature     |
 
-### 4.6 Meeting 8
+### 4.8 Meeting 8
 
 **Time:** July 5, 2024, 3: 00 pm to 4: 30 pm
 **Agenda:** Unit testing and Integration testing
@@ -348,7 +348,7 @@ Overall, the final solution for DollarDiary provides a robust and comprehensive 
 | Savan Pedhadiya    | Started Unit Testing for report feature     | Ongoing        | Integration Testing and Unit Testing  |
 | Jay Panchal        | Started Unit Testing for report feature  | Ongoing        | Integration Testing and Unit Testing |
 
-### 4.6 Meeting 9
+### 4.9 Meeting 9
 
 **Time:** July 5, 2024, 3: 00 pm to 4: 30 pm
 **Agenda:** Bug Fixing
@@ -359,7 +359,7 @@ Overall, the final solution for DollarDiary provides a robust and comprehensive 
 | Savan Pedhadiya    | Integration Testing and Unit Testing  | Ongoing        | Bug Fixing   |
 | Jay Panchal        | Integration Testing and Unit Testing   | Ongoing       | Bug Fixing   |
 
-### 4.6 Meeting 10
+### 4.10 Meeting 10
 
 **Time:** July 12, 2024, 3: 00 pm to 4: 30 pm
 **Agenda:** Documentation and Bug Fixing
@@ -370,7 +370,7 @@ Overall, the final solution for DollarDiary provides a robust and comprehensive 
 | Savan Pedhadiya    | Bug Fixing | Done         | Whole Project documentation and submitting on GitHub |
 | Jay Panchal        | Bug Fixing  | Done         | Whole Project documentation and submitting on GitHub |
 
-### 4.6 Meeting 11
+### 4.11 Meeting 11
 
 **Time:** July 17, 2024, 3: 00 pm to 4: 30 pm
 **Agenda:** Final Review and Presentation Preparation
