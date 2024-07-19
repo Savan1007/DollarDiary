@@ -6,7 +6,7 @@
 - **C3:** 1 ≤ Categories ≤ 6
 
 ## Action Stubs
-- **A1:** Valid Entry
-- **A2:** Invalid Entry
+- **A1:** Report generated
+- **A2:** Report not generated
 
 ![Decision Table](Decision_table.png)
