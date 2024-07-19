@@ -1,5 +1,7 @@
 # ENSE 375 – Software Testing and Validation
 
+![UofR](UofR_logo.png)
+
 # DollarDiary
 
 **Team Members:**
