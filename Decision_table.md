@@ -1,4 +1,4 @@
-# Decision Table
+# Decision Table based Testing
 
 ## Condition Stubs
 - **C1:** 1 ≤ Month ≤ 12
