@@ -20,7 +20,7 @@ Overall, DollarDiary aims to provide a seamless and efficient way for users to m
 
 ## Technology Stack
  
-- **Backend:** Java (Spring Boot)
+- **Backend:** Java
 - **Database:** MongoDB
-- **Authentication:** Spring Security with JWT
-- **Build Tool:** Maven or Gradle
+- **Authentication:** Basic Security
+- **Build Tool:** Maven 
