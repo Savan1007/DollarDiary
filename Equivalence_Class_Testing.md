@@ -1,4 +1,4 @@
-# Equivalence Class Testing
+# Strong Robust Equivalence Class Testing
 
 ## Intervals
 
