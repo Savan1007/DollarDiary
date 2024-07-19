@@ -9,4 +9,4 @@
 - **A1:** Valid Entry
 - **A2:** Invalid Entry
 
-![Decision Table](Assests/Decision_table.png)
+![Decision Table](Decision_table.png)
