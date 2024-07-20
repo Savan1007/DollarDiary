@@ -2,7 +2,7 @@
 
 ## State Transition Diagram
 
-![State Transition Diagram](State_transition.png)
+![State Transition Diagram](State_transition.jpg)
 
 ## State Transition Table
 
