@@ -1,4 +1,4 @@
-#### Integration Testing
+# Integration Testing
 - **Objective**: To confirm that different components of the application interact correctly.
 - **Approach**: Test the interactions between various components, such as expense logging and updates, to ensure they work seamlessly together.
 
