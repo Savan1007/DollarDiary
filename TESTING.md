@@ -63,46 +63,61 @@ This document outlines the test plan for the DollarDiary application. It include
 #### User Registration
 - **Test Case 1**: **Successful Registration**
   - **Description**: Verify that a new user can register with valid data.
+  - ![User Registration](Assests/test_cases/user_registration_and_login/test_case_1.png)
   - **Expected Result**: User is successfully registered and redirected to the login page.
+  - ![User Registration](Assests/test_cases/user_registration_and_login/test_case_1_output.png)
 
 - **Test Case 2**: **Login with Valid Credentials**
   - **Description**: Ensure that a user can log in with valid credentials.
+  - ![Login with Valid Credentials](Assests/test_cases/user_registration_and_login/test_case_2.png)
   - **Expected Result**: User is successfully logged in and redirected to the dashboard.
+  - ![Login with Valid Credentials](Assests/test_cases/user_registration_and_login/test_case_2_output.png)
 
 - **Test Case 3**: **Login with Invalid Credentials**
   - **Description**: Verify that login fails with invalid credentials.
+  - ![Login with Invalid Credentials](Assests/test_cases/user_registration_and_login/login_failed.png)
   - **Expected Result**: Login attempt fails with an error message indicating invalid credentials.
+  - ![Login with Invalid Credentials](Assests/test_cases/user_registration_and_login/Login_Failed_Ouput.png)
 
 ### Expense Logging
 
 #### Adding an Expense
 - **Test Case 1**: **Add Expense with All Required Fields**
-  - **Description**: Ensure an expense can be added with date, amount, category, and description.
+  - **Description**: Ensure an expense can be added with all required fields.
+  - ![Adding an Expense](Assests/test_cases/expense_logging/add_expense.png)
   - **Expected Result**: Expense is added successfully and visible in the expense list.
+  - ![Adding an Expense](Assests/test_cases/expense_logging/add_expense_output.png)
 
 #### Updating an Expense
 - **Test Case 2**: **Update Existing Expense**
   - **Description**: Verify that an existing expense can be updated.
+  - ![Updating an Expense](Assests/test_cases/expense_logging/update_expense.png)
   - **Expected Result**: Expense details are updated and displayed correctly.
+  - ![Updating an Expense](Assests/test_cases/expense_logging/update_expense.png)
 
 #### Deleting an Expense
 - **Test Case 3**: **Delete Expense**
   - **Description**: Ensure that an expense can be deleted.
+  - ![Deleting an Expense](Assests/test_cases/expense_logging/delete_expense.png)
   - **Expected Result**: Expense is removed from the list and no longer visible.
+  - ![Deleting an Expense](Assests/test_cases/expense_logging/delete_expense_output.png)
 
 ### Budget Setting and Management
 
 #### Updating a Budget
 - **Test Case 1**: **Update Budget**
   - **Description**: Verify that an existing budget can be updated.
+  - ![Updating a Budget](Assests/test_cases/setting_budget/setting_budget.png)
   - **Expected Result**: Budget amount is updated and displayed correctly.
+  - ![Updating a Budget](Assests/test_cases/setting_budget/setting_budget_output.png)
 
 ### Report Generation
 
 #### Monthly Report
 - **Test Case 1**: **Generate Monthly Report**
   - **Description**: Verify that a monthly report is generated correctly.
-  - **Expected Result**: Monthly report is generated and includes accurate expense details.
+  - ![Monthly Report](Assests/test_cases/expense_logging/report.png)
+
 
 ## Test Execution
 
