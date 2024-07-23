@@ -216,7 +216,7 @@ The final solution is superior to the previous ones because it incorporates comp
    - Ensure all logical conditions within functions, such as if-else statements in the budget setting functionality, are tested.
    - *Summary:* These tests ensure that all logical conditions and branches in the code are tested for correctness.
 
-4. **Integration Testing:**
+4. **[Integration Testing:](Integration_testing.md)**
    - Test the interaction between components, such as logging an expense and updating the dashboard.
    - *Summary:* These tests verify that different components of the application interact correctly and work seamlessly together.
 
