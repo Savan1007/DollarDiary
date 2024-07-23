@@ -32,7 +32,7 @@ This document outlines the test plan for the DollarDiary application. It include
 - **Objective**: To test all logical conditions within the application.
 - **Approach**: Verify that all logical branches, such as if-else statements in budget setting, are tested for correctness.
 
-#### Integration Testing
+#### [Integration Testing](Integration_testing.md)
 - **Objective**: To confirm that different components of the application interact correctly.
 - **Approach**: Test the interactions between various components, such as expense logging and dashboard updates, to ensure they work seamlessly together.
 
