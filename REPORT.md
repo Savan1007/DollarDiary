@@ -378,17 +378,64 @@ Overall, the final solution for DollarDiary provides a robust and comprehensive 
 
 ## 5. Project Management
 
-Describe how you managed your project. What are the different roles you assigned? How did you track the progress of the project? Which project management tools did you use?
+### Project Management Overview
+
+Effective project management was crucial to the success of DollarDiary. As a team of students, we divided the work based on individual skills and expertise to ensure a balanced distribution of tasks. Each member focused on different aspects of the project, such as backend development, database management, interface design, and testing.
+
+### Progress Tracking
+
+To track the progress of the project, we used several project management tools and techniques:
+
+- **Weekly Meetings:** We conducted weekly meetings to discuss progress, address any blockers, and plan the upcoming week's work. These meetings ensured that everyone was on the same page and that issues were resolved quickly.
+- **Sprint Planning and Review:** We adopted an agile approach, organizing our work into two-week sprints. During sprint planning meetings, we defined the tasks and goals for the upcoming sprint. At the end of each sprint, we held a review meeting to assess what was accomplished and to plan for the next sprint.
+
+### Project Management Tools
+
+We used several tools to facilitate project management and communication:
+
+- **GitHub:** For version control and code management. We managed our source code using GitHub, tracked changes, and facilitated collaboration among team members through pull requests and code reviews.
+- **Google Drive:** For document sharing and collaboration. We used Google Drive to store and collaborate on project documents, such as the project plan, design documents, and test plans.
+
+### Conclusion
+
+By dividing the work based on individual strengths, using effective project management tools, and following agile methodologies, we were able to manage the DollarDiary project efficiently. These practices ensured that we met our deadlines, maintained high-quality standards, and delivered a robust expense-tracking system.
+
 
 ## 6. Conclusion and Future Work
 
-Summarize the overall experience and outcomes of your project. What were the key takeaways? What future work is planned to further improve or expand your project?
+### Conclusion
+
+The DollarDiary project was a highly educational and rewarding experience for our team. Through this project, we gained hands-on experience in developing a comprehensive expense tracking system using Java and Spring Boot. The project allowed us to apply various software development methodologies, particularly test-driven development, and to work collaboratively as a team. Our key takeaways include:
+
+- **Technical Skills:** Enhanced our proficiency in Java, Spring Boot, MongoDB, and command-line interface design.
+- **Project Management:** Improved our ability to manage a project using agile methodologies, including sprint planning and weekly meetings.
+- **Collaboration:** Strengthened our teamwork and communication skills, ensuring smooth collaboration despite the complexities of the project.
+- **Problem-Solving:** Developed our problem-solving skills through debugging, optimizing, and testing the application.
+
+Overall, the project successfully met its objectives by providing a robust, user-friendly expense tracking system that helps users manage their personal finances effectively.
+
+### Future Work
+
+To further improve and expand DollarDiary, we plan the following enhancements:
+
+1. **User Interface:** Transition from a command-line interface to a more intuitive graphical user interface (GUI) to make the application accessible to a broader audience.
+2. **Mobile Application:** Develop a mobile version of DollarDiary for both iOS and Android platforms, providing users with on-the-go expense tracking capabilities.
+3. **Advanced Reporting:** Incorporate more advanced reporting features, such as predictive analytics and trend analysis, to provide users with deeper insights into their spending habits.
+4. **Integration with Financial Institutions:** Enable integration with banks and other financial institutions to automatically import and categorize transactions, reducing manual data entry.
+5. **Multi-User Support:** Expand the application to support multiple users with different roles, such as family members or small business teams, to manage shared finances collaboratively.
+6. **Enhanced Security:** Implement additional security measures, such as two-factor authentication (2FA) and data encryption, to further protect user data.
+7. **API Development:** Develop APIs to allow third-party applications to integrate with DollarDiary, fostering a broader ecosystem of financial tools and services.
+
+By pursuing these future enhancements, we aim to make DollarDiary an even more powerful and versatile tool for personal finance management, catering to the evolving needs of our users.
+
 
 ## 7. References
 
-List any references used in your project. Make sure to format them correctly according to your course guidelines.
-
-## 8. Appendix
-
-Include any additional material that supports your project but does not fit within the main body of the report.
-
+1. Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley.
+2. Bloch, J. (2008). *Effective Java* (2nd ed.). Addison-Wesley.
+3. Fowler, M. (2018). *Refactoring: Improving the Design of Existing Code* (2nd ed.). Addison-Wesley.
+4. Beck, K. (2003). *Test Driven Development: By Example*. Addison-Wesley.
+5. Freeman, S., & Pryce, N. (2009). *Growing Object-Oriented Software, Guided by Tests*. Addison-Wesley.
+6. MongoDB Documentation. Retrieved from [https://docs.mongodb.com/](https://docs.mongodb.com/)
+7. JUnit 5 User Guide. Retrieved from [https://junit.org/junit5/docs/current/user-guide/](https://junit.org/junit5/docs/current/user-guide/)
+8. GitHub Documentation. Retrieved from [https://docs.github.com/en](https://docs.github.com/en)
