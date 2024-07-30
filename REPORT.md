@@ -405,14 +405,14 @@ By dividing the work based on individual strengths, using effective project mana
 
 ### Conclusion
 
-The DollarDiary project was a highly educational and rewarding experience for our team. Through this project, we gained hands-on experience in developing a comprehensive expense tracking system using Java and Spring Boot. The project allowed us to apply various software development methodologies, particularly test-driven development, and to work collaboratively as a team. Our key takeaways include:
+The DollarDiary project was a highly educational and rewarding experience for our team. Through this project, we gained hands-on experience in developing a comprehensive expense-tracking system using Java. The project allowed us to apply various software development methodologies, particularly test-driven development, and to work collaboratively as a team. Our key takeaways include:
 
-- **Technical Skills:** Enhanced our proficiency in Java, Spring Boot, MongoDB, and command-line interface design.
+- **Technical Skills:** Enhanced our proficiency in Java, MongoDB, and command-line interface design.
 - **Project Management:** Improved our ability to manage a project using agile methodologies, including sprint planning and weekly meetings.
 - **Collaboration:** Strengthened our teamwork and communication skills, ensuring smooth collaboration despite the complexities of the project.
 - **Problem-Solving:** Developed our problem-solving skills through debugging, optimizing, and testing the application.
 
-Overall, the project successfully met its objectives by providing a robust, user-friendly expense tracking system that helps users manage their personal finances effectively.
+Overall, the project successfully met its objectives by providing a robust, user-friendly expense-tracking system that helps users manage their personal finances effectively.
 
 ### Future Work
 
