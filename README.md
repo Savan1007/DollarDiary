@@ -25,7 +25,8 @@ Overall, DollarDiary aims to provide a seamless and efficient way for users to m
 - **Authentication:** Basic Security
 - **Build Tool:** Maven 
 
+## Presentation Video
 
-[![Watch the video]()](https://drive.google.com/file/d/1my8VRBfOtw0BSDYElP7jV49xIkNN8V98/view?usp=sharing)
+[![Watch the video](https://drive.google.com/file/d/11XrW_RIqxWP2NC0yKq2ex673ED5JZZb7/view?usp=drive_link)](https://drive.google.com/file/d/1my8VRBfOtw0BSDYElP7jV49xIkNN8V98/view?usp=sharing)
 
 
