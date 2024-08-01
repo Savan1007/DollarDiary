@@ -26,4 +26,6 @@ Overall, DollarDiary aims to provide a seamless and efficient way for users to m
 - **Build Tool:** Maven 
 
 
-https://drive.google.com/file/d/1my8VRBfOtw0BSDYElP7jV49xIkNN8V98/view?usp=sharing
+[![Watch the video]()](https://drive.google.com/file/d/1my8VRBfOtw0BSDYElP7jV49xIkNN8V98/view?usp=sharing)
+
+
